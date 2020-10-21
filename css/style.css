@@ -43,6 +43,7 @@
   --white-text-color: #ffffff;
   --opacity-white-text-color: rgba(255, 255, 255, 0.6);
   --background-color: #e5e5e5;
+  --secondary-accent-color: #f5f4fa;
   --dark-background-color: #2f303a;
 }
 
@@ -57,6 +58,7 @@ html {
 }
 
 body {
+  margin: 0;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -94,7 +96,31 @@ address {
   padding-right: 15px;
   margin: 0 auto;
 }
+
+.photo {
+  margin: 0;
+  padding: 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
 /* Стили шапки */
+header > .container {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .logo {
   margin-top: 0;
   margin-bottom: 0;
@@ -142,6 +168,10 @@ address {
 
 /* Стили героя */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  height: 600px;
+  text-align: center;
   background-color: var(--dark-background-color);
 }
 .hero-title {
@@ -151,11 +181,11 @@ address {
   text-transform: uppercase;
   line-height: 1.364;
   letter-spacing: 0.06em;
-  text-align: center;
   color: var(--white-text-color);
 }
 
 .button {
+  font-family: inherit;
   padding: 10px 32px;
   min-width: 200px;
   height: 50px;
@@ -176,6 +206,7 @@ address {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.167;
+  text-align: center;
   color: var(--title-text-color);
 }
 
@@ -205,6 +236,10 @@ address {
 }
 
 /* Стили Чем мы занимаемся */
+.work-item {
+  margin: 0;
+  padding: 0;
+}
 
 .work-item:not(:last-child) {
   margin-right: 30px;
@@ -214,6 +249,7 @@ address {
 .team.section {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: var(--secondary-accent-color);
 }
 
 .team-member {
@@ -277,29 +313,48 @@ address {
 
 /* Стили Портфолио */
 
+.works-examples {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+
 /* Стили списка фильтров */
 
-.filters .link {
+.filters {
+  margin-bottom: 50px;
+}
+
+.filters .button {
+  padding: 6px 22px;
+  min-width: 73px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
+  border-radius: 4px;
   color: var(--title-text-color);
+  background-color: var(--secondary-accent-color);
 }
 
-.filters .link:hover,
-.filters .link:focus {
+.filters .button:hover,
+.filters .button:focus {
   font-weight: 500;
   font-size: 16px;
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
 }
 
 /* Стили Примеров работ */
 
+.examples-item {
+  width: 370px;
+}
+
 .examples .link {
+  display: inline-block;
+  margin: 20px 24px 0;
+  width: 322px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -308,6 +363,8 @@ address {
 }
 
 .examples .type {
+  margin: 4px 24px 20px;
+  width: 322px;
   font-size: 16px;
   line-height: 1.875;
   color: var(--primary-text-color);
