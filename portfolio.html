@@ -17,19 +17,23 @@
   <body>
     <!-- Хедер -->
     <header>
-      <div class="container">
+      <div class="container flex">
         <div>
-          <nav>
-            <a class="logo" href="./index.html">
-              <span class="logo-blue">Web</span>Studio</a
-            >
-            <ul class="site-nav list">
-              <li><a class="link" href="./index.html">Студия</a></li>
-              <li>
-                <a class="link current" href="./portfolio.html">Портфолио</a>
-              </li>
-              <li><a class="link" href="#contacts">Контакты</a></li>
-            </ul>
+          <nav class="main-nav">
+            <div>
+              <a class="logo" href="./index.html">
+                <span class="logo-blue">Web</span>Studio</a
+              >
+            </div>
+            <div>
+              <ul class="site-nav list">
+                <li><a class="link" href="./index.html">Студия</a></li>
+                <li>
+                  <a class="link current" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li><a class="link" href="#contacts">Контакты</a></li>
+              </ul>
+            </div>
           </nav>
         </div>
         <div>
@@ -46,13 +50,14 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="works-examples">
         <div class="container">
           <h1 class="visually-hidden">Примеры работ</h1>
           <!-- Фильтры -->
           <div class="filters">
-            <ul class="filters list">
+            <ul class="filters-list list flex">
               <li><button class="button">Все</button></li>
               <li><button class="button">Веб-сайты</button></li>
               <li><button class="button">Приложения</button></li>
@@ -62,12 +67,11 @@
           </div>
           <!-- Примеры работ -->
           <div>
-            <ul class="examples list">
+            <ul class="examples list flex">
               <li class="examples-item">
                 <img
                   class="photo"
                   src="./img/portfolio/img1.jpg"
-                  width="370px"
                   alt="Технокряк"
                 />
                 <a class="link" href="#"> Технокряк</a>
@@ -77,7 +81,6 @@
                 <img
                   class="photo"
                   src="./img/portfolio/img2.jpg"
-                  width="370px"
                   alt="Постер New Orlean vs Golden Star"
                 />
                 <a class="link" href="#"> Постер New Orlean vs Golden Star</a>
@@ -87,7 +90,6 @@
                 <img
                   class="photo"
                   src="./img/portfolio/img3.jpg"
-                  width="370px"
                   alt="Ресторан Seafood"
                 />
                 <a class="link" href="#"> Ресторан Seafood</a>
@@ -104,14 +106,17 @@
                 <p class="type">Маркетинг</p>
               </li>
               <li class="examples-item">
+                <div class="test"></div>
                 <img
                   class="photo"
                   src="./img/portfolio/img5.jpg"
                   width="370px"
                   alt="Проект Boxes"
                 />
-                <a class="link" href="#"> Проект Boxes</a>
-                <p class="type">Приложение</p>
+                <div class="border">
+                  <a class="link" href="#"> Проект Boxes</a>
+                  <p class="type">Приложение</p>
+                </div>
               </li>
               <li class="examples-item">
                 <img
@@ -120,8 +125,10 @@
                   width="370px"
                   alt="Inspiration has no Borders"
                 />
-                <a class="link" href="#">Inspiration has no Borders</a>
-                <p class="type">Веб-сайт</p>
+                <div class="border">
+                  <a class="link" href="#">Inspiration has no Borders</a>
+                  <p class="type">Веб-сайт</p>
+                </div>
               </li>
               <li class="examples-item">
                 <img
@@ -130,8 +137,10 @@
                   width="370px"
                   alt="Издание Limited Edition"
                 />
-                <a class="link" href="#"> Издание Limited Edition</a>
-                <p class="type">Дизайн</p>
+                <div class="border">
+                  <a class="link" href="#"> Издание Limited Edition</a>
+                  <p class="type">Дизайн</p>
+                </div>
               </li>
               <li class="examples-item">
                 <img
@@ -140,8 +149,10 @@
                   width="370px"
                   alt="Проект LAB"
                 />
-                <a class="link" href="#"> Проект LAB</a>
-                <p class="type">Маркетинг</p>
+                <div class="border">
+                  <a class="link" href="#"> Проект LAB</a>
+                  <p class="type">Маркетинг</p>
+                </div>
               </li>
               <li class="examples-item">
                 <img
@@ -150,8 +161,10 @@
                   width="370px"
                   alt="Growing Business"
                 />
-                <a class="link" href="#"> Growing Business</a>
-                <p class="type">Приложение</p>
+                <div class="border">
+                  <a class="link" href="#"> Growing Business</a>
+                  <p class="type">Приложение</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -161,7 +174,7 @@
 
     <!-- Футер -->
     <footer class="footer">
-      <div>
+      <div class="container">
         <p class="logo"><span class="logo-blue">Web</span>Studio</p>
         <address class="adress">
           <ul class="adress-list list" id="contacts">
