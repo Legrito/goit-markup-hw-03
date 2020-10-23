@@ -125,12 +125,11 @@ address {
 /* Стили шапки */
 
 header {
-  border-bottom: 1px solid #ececec;
-}
-header > .container {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
+
 .logo {
   margin-top: 0;
   margin-bottom: 0;
@@ -254,8 +253,8 @@ header .flex {
 }
 
 .section {
-  margin-top: 94px;
-  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 0;
 }
 
 /* Стили секции "Преимущества" */
@@ -301,7 +300,6 @@ header .flex {
 /* Стили секции "Команда" */
 
 .team.section {
-  padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--secondary-accent-color);
 }
@@ -312,7 +310,7 @@ header .flex {
   margin-top: 30px;
   padding-bottom: 30px;
   text-align: center;
-  background: #ffffff;
+  background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -371,8 +369,7 @@ header .flex {
 /* Стили Портфолио */
 
 .works-examples {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 /* Стили списка фильтров */
@@ -420,16 +417,22 @@ header .flex {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+  background: var(--white-color);
+  /* outline: 1px solid tomato; */
 }
 
-.examples-item .photo {
-  margin: 0;
-  padding: 0;
+.examples-item .border {
+  padding: 24px 20px;
+  box-sizing: border-box;
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  background: var(--white-color);
 }
 
 .examples .link {
   display: inline-block;
-  margin: 20px 24px 0;
+  margin-bottom: 4px;
   width: 322px;
   font-weight: 700;
   font-size: 18px;
@@ -439,7 +442,7 @@ header .flex {
 }
 
 .examples .type {
-  margin: 4px 24px 20px;
+  margin: 0;
   width: 322px;
   font-size: 16px;
   line-height: 1.875;
