@@ -385,7 +385,7 @@ header .flex {
 }
 
 .filters-list .button {
-  box-sizing: border-box;
+  box-sizing: inline-box;
   margin-right: 8px;
   padding: 6px 22px;
   min-width: 73px;
